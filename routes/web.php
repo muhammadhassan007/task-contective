@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 Route::get('/ip-address-log', function () {
     return 'Check the logs for the IP address. dire.. Storage/logs/laravel.log';
-})->middleware('log.ip');
+})->middleware('log.ip')->name('ip.log');
 
 // these are the routes for file upload
 
